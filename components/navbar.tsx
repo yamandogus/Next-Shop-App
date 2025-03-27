@@ -18,6 +18,7 @@ import { useState, useEffect } from "react";
 import { Popover, PopoverContent, PopoverTrigger } from "@heroui/popover";
 import { CartPreview } from "./cart/cart-preview";
 import { LiaShopware } from "react-icons/lia";
+import { Search } from "./search/search";
 
 export const Navbar = () => {
   const { items, totalQuantity } = useSelector((state: RootState) => state.product);
@@ -58,6 +59,9 @@ export const Navbar = () => {
         </NavbarContent>
 
         <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
+          <NavbarItem className="relative">
+            <Search />
+          </NavbarItem>
           <NavbarItem className="hidden sm:flex">
             <ThemeSwitch />
           </NavbarItem>
@@ -74,7 +78,6 @@ export const Navbar = () => {
                   )}
                 </div>
               </PopoverTrigger>
-
               <PopoverContent className="border-1 dark:border-gray-800 rounded-lg dark:bg-gray-800 dark:text-white">
                 <div>
                   <CartPreview />

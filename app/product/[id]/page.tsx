@@ -52,7 +52,7 @@ const ProductDetail = () => {
           <SlArrowLeft />
         </Button>
       </div>
-      <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+      <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
         <div className="p-4 flex flex-col md:flex-row gap-4">
           <div className="relative w-full md:w-1/3 h-[300px] flex-shrink-0">
             <Image
