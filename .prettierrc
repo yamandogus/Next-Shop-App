@@ -1,0 +1,10 @@
+{
+    "endOfLine": "auto",
+    "jsxSortProps": true,
+    "bracketSpacing": true,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "es5",
+    "printWidth": 100,
+    "tabWidth": 2
+  }
